@@ -184,6 +184,8 @@ spec:
               echo "rabbitmq.podManagementPolicy is not set"
             fi
             {{- end }}
+          resources:
+{{ toYaml .Values.rabbitmq.migration.resources | indent 12 }}
       restartPolicy: Never
       terminationGracePeriodSeconds: 0
 {{- end }}
