@@ -668,7 +668,7 @@ rabbitmq:
                 - get
                 - list
                 - delete
-
+    resources: {}
 
   # This is automatically set based on rabbitmqTLS enabled flag.
   extraConfiguration: |-
